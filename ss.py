@@ -1,0 +1,1 @@
+N=int(input());c=__import__("collections").Counter(map(int,input().split()));m=[0];[print(max(m[0],c[i])) or m.__setitem__(0, m[0]+(c[i]==0)) for i in range(N+1)]
